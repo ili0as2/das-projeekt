@@ -1,0 +1,356 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+.destination {
+    margin-top: 20px;
+}
+
+.destination-checkbox {
+    margin-right: 5px;
+}
+
+#cart {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 200px;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+#popup {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 300px;
+}
+
+.bordered-div {
+    
+    border: 8px solid #269ce0; /* You can customize the border color and thickness */
+    padding: 0px; /* Optional: Add padding to the content inside the div */
+    display: block;
+     border-radius: 10px;
+  }
+
+  .bordered-div2 {
+    
+    border: 16px solid #3910a8; /* You can customize the border color and thickness */
+    padding: 0px; /* Optional: Add padding to the content inside the div */
+    display: block;
+    border-radius: 32px;
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .image-grid img:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+  }
+
+  .city-carousel-container {
+    max-width: 990px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .city-carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+  }
+
+  .setimagebig {
+
+    width: auto;
+    max-height: 500px;
+    margin-right: 100px;
+    height: 800px;
+    padding: auto;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.diesesbild {
+
+  padding-top: 11px;
+  padding-right: 322px;
+
+
+}
+
+.diesertextbild {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 222px;
+  padding-right: 272px;
+  margin-bottom: 20px;
+}
+
+.diesertextbild h2 {
+  margin-right: 144px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #066b85;
+  animation: entranceAnimation 3s ease-out forwards;
+  transform: translate(-50px);
+}
+
+.aboutusdiv {
+  background-color: #e7ebf0;
+  margin-left: -100px;
+  margin-right: -200px;
+  width: 110%;
+  height: 600px;
+  top: 0;
+  padding-left: 110px;
+  padding-right: 110px; /* Adjust padding for better spacing */
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+
+}
+.aboutustitel {
+  color: rgb(0, 179, 155);
+  font-size: 45px;
+  margin-top: 70px;
+}
+.aboutustext {
+  font-style: oblique;
+  color:#1f1f1f;
+  font-size: large;
+  margin-right: 10px; /* Adjust margin for better spacing */
+  width: 49%;
+  padding-top: -5px;
+}
+
+.aboutuscontent {
+  font-size: large;
+  width:max-content;
+  padding-left: 300px;
+  margin-left: -800px;
+  padding-bottom: 911px;
+}
+
+.aboutuscontent2 {
+  font-size: large;
+  width:max-content;
+  padding-left: 300px;
+  margin-left: -1075px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  .navbar {
+    margin-left: -21px;
+    display: flex;
+    background: linear-gradient(to right, #00bfff, #737373); /* Adjust color codes as needed */
+    color: white; /* Adjust text color for better contrast */
+    padding: 15px;
+    position:fixed;
+    width: 105%;
+    top: 0;
+    transition: top 0.3s;
+}
+
+/* Add these styles to your existing CSS file */
+.navbar a {
+    color: #11326c; /* Dark blue for regular links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+    z-index: 1000;
+}
+
+.navbar a:hover {
+    color: #ffffff; /* Lighter blue for links on hover */
+}
+
+
+.navbar {
+        list-style: none;
+        padding: 6;
+        margin: 10;
+        z-index: 1000;
+        
+    }
+
+    .navbar a {
+        text-decoration: none; /* Optionally remove underlines from links */
+    }
+
+    
+
+
+
+
+
+/* Entrance animation */
+.titeldings {
+  font-family: 'Playfair Display', serif;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  transform: translateY(-50px);
+  animation: entranceAnimation 1s ease-out forwards;
+  transition: color 1s ease-out; /* Add transition for smooth color change */
+  background-clip: text;
+  cursor: pointer; /* Add cursor pointer for better user interaction */
+}
+
+@keyframes entranceAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll-triggered animation */
+.titeldings.scroll-animation {
+  opacity: 0;
+  transform: translateY(-60px);
+  animation: scrollAnimation 5s ease-out forwards;
+}
+
+/* Rainbow flowing colors on click */
+.titeldings.clicked {
+  color: transparent;
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 300% 200%; /* Adjust the size based on your preference */
+  animation: rainbowFlow 4s linear infinite, entranceAnimation 0s; /* Combine with entranceAnimation to prevent it from restarting on click */
+}
+
+@keyframes rainbowFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+
+
+/* Custom styles for the carousel */
+#about-carousel {
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+#about-carousel .carousel-control {
+  font-size: 20px; /* Adjust the font size of the navigation buttons */
+  background: none; /* Remove the background color */
+  border: none; /* Remove the border */
+  opacity: 0.7; /* Adjust the opacity of the buttons as needed */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+#about-carousel .carousel-control:hover {
+  opacity: 1; /* Increase opacity on hover */
+}
+
