@@ -81,7 +81,15 @@ a:hover {
 
 
 
+  .carousel-inner {
+    width: 1200px; /* Adjust the width as needed */
+    height: auto; /* Set height to auto to allow it to adjust based on content */
+}
 
+
+.right.carousel-control {
+  right: -220px; /* Adjust the value to move the button further to the right */
+}
 
 
 
