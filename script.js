@@ -1,6 +1,12 @@
 function scrollToSection(sectionId) {
   var element = document.getElementById(sectionId);
-  element.scrollIntoView({ behavior: 'smooth' });
+  var offset = 150; // Adjust this value to set the amount of space you want at the top
+  var offsetPosition = element.offsetTop - offset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth'
+  });
 }
 
 function showCart() {
@@ -37,19 +43,15 @@ window.onscroll = function() {
   }
 
   prevScrollpos = currentScrollPos;
+
+  var navbar = document.getElementById("navbar");
+  if (window.pageYOffset > 1000) { // Adjust the scroll value as needed
+      navbar.classList.add("scrolled");
+  } else {
+      navbar.classList.remove("scrolled");
+  }
 };
 
 document.getElementById('animatedText').addEventListener('click', function() {
   this.classList.toggle('clicked');
 });
-
-
-window.onscroll = function() {
-    var navbar = document.getElementById("navbar");
-
-    if (window.pageYOffset > 100) { // Adjust the scroll value as needed
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
-    }
-};

@@ -1,6 +1,7 @@
 body {
     margin: 20px;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -91,10 +92,18 @@ a:hover {
   right: -220px; /* Adjust the value to move the button further to the right */
 }
 
+.left.carousel-control {
+  left: -175px; /* Adjust the value to move the button further to the right */
+}
 
 
+#about-carousel .left.carousel-control {
+  left: 0px !important; /* Adjust the value to move the button further to the right */
+}
 
-
+#about-carousel .right.carousel-control {
+  right: 0px  /* Adjust the value to move the button further to the right */
+}
 
 
 
@@ -120,12 +129,19 @@ a:hover {
     max-width: 990px;
     margin: auto;
     padding: 20px;
-  }
+    position: relative; /* Ensure relative positioning */
+}
+
+#city-carousel .carousel-inner {
+    margin-left: -290px; /* das macht das nach links rechts sonst nichts */
+}
+
+
 
   .city-carousel-caption {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding: 10px;
+    margin: 120px;
   }
 
   .setimagebig {
@@ -140,7 +156,7 @@ a:hover {
 
 
 
-
+ 
 
 
 
@@ -207,13 +223,13 @@ a:hover {
   color:#1f1f1f;
   font-size: large;
   margin-right: 10px; /* Adjust margin for better spacing */
-  width: 49%;
+  width: 50%;
   padding-top: -5px;
 }
 
 .aboutuscontent {
   font-size: large;
-  width:max-content;
+
   padding-left: 300px;
   margin-left: -800px;
   padding-bottom: 911px;
@@ -221,7 +237,7 @@ a:hover {
 
 .aboutuscontent2 {
   font-size: large;
-  width:max-content;
+
   padding-left: 300px;
   margin-left: -1075px;
  
