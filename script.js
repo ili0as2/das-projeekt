@@ -9,6 +9,7 @@ function scrollToSection(sectionId) {
   });
 }
 
+//shopping dings cart
 function showCart() {
   var popupOverlay = document.getElementById("overlay");
   var popupCartItems = document.getElementById("popup-cart-items");
@@ -55,3 +56,18 @@ window.onscroll = function() {
 document.getElementById('animatedText').addEventListener('click', function() {
   this.classList.toggle('clicked');
 });
+
+
+
+
+
+
+function openPopup() {
+  var popupContainer = document.getElementById("customPopup");
+  popupContainer.style.display = "block";
+}
+
+function closePopup() {
+  var popupContainer = document.getElementById("customPopup");
+  popupContainer.style.display = "none";
+}

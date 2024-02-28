@@ -42,7 +42,7 @@
         <li><a class="dropdown-item"onclick="scrollToSection('aboutusdings')">About us</a></li>
 
 
-        <a href="#">Contact</a>
+        <a href="#" onclick="openPopup()">Contact</a>
         <li class="nav-item dropdown" style="margin-top: -0,5px;">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
             <ul class="dropdown-menu"> 
@@ -117,7 +117,7 @@
 
 
     <div>
-    <p class="aboutustitel">About us </br></br><p class="aboutustext">Herzlich willkommen bei Air Ilias, deinem bevorzugten Partner für sichere und erfolgreiche Reisen! Unser Hauptquartier liegt stolz in Ilotopilas, dem Herz unserer Unternehmenskultur und unserer Leidenschaft für exzellenten Service.</br></br>
+    <p class="aboutustitel"><b>About us</b> </br></br><p class="aboutustext">Herzlich willkommen bei Air Ilias, deinem bevorzugten Partner für sichere und erfolgreiche Reisen! Unser Hauptquartier liegt stolz in Ilotopilas, dem Herz unserer Unternehmenskultur und unserer Leidenschaft für exzellenten Service.</br></br>
 
         Air Ilias steht für Erfolg und Sicherheit. Wir sind stolz darauf, eine beeindruckende Erfolgsbilanz vorweisen zu können. In den letzten 4 Tagen haben wir lediglich 10 Unfälle verzeichnet, was unsere Hingabe zu höchsten Sicherheitsstandards unterstreicht.</br></br>
         
@@ -131,7 +131,7 @@
 </br>
     <div class="container aboutuscontent2">
         <div class="destination-carousel" id="#">
-            <h3>Unsere Flotte</h3>
+            <h3 class="glow"><b>Unsere Flotte</b></h3>
             <div id="about-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <!-- Slide 1 -->
@@ -289,7 +289,7 @@
 </br></br></br>
 
 <center>
-    <h1>Jetzt Flüge Buchen!</h1>
+    <h1><b>Jetzt Flüge Buchen!</b></h1>
 </br></br></br>
 </br></br></br>
 </br></br></br>
@@ -524,7 +524,7 @@
 
 <div class="container">
     <div class="destination-carousel" id="europe">
-        <h2>North American Destinations</h2>
+        <h2>Europa</h2>
         <div id="europe-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <!-- Slide 1 -->
@@ -636,7 +636,7 @@
 <center>
 <div class="container">
 <div class="destination-carousel" id="africa">
-<h2>Asia Destinations</h2>
+<h2>Africa Destinations</h2>
 <div id="africa-carousel" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
     <!-- Slide 1 -->
@@ -745,7 +745,7 @@
 
 <div class="container">
     <div class="destination-carousel" id="south-america">
-        <h2>North American Destinations</h2>
+        <h2>South American Destinations</h2>
         <div id="south-america-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <!-- Slide 1 -->
@@ -857,7 +857,7 @@
 <center>
 <div class="container">
 <div class="destination-carousel" id="oceania">
-<h2>Asia Destinations</h2>
+<h2>Oceania Destinations</h2>
 <div id="oceania-carousel" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
     <!-- Slide 1 -->
@@ -948,6 +948,15 @@
         </div>
       </div>
     
+
+
+
+      <div id="customPopup" class="popup-container">
+        <h1>Contact info</h1>
+        <p>E-mail: airilias@gmail.cool</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
 
 
     
