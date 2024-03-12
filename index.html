@@ -16,7 +16,7 @@
     <link href="css/custom.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -40,7 +40,7 @@
 
         <li><a class="dropdown-item"onclick="scrollToSection('aboutusdings')">About us</a></li>
 
-
+        
         <a href="#" onclick="openPopup()">Contact</a>
         <li class="nav-item dropdown" style="margin-top: -0,5px;">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
@@ -50,11 +50,12 @@
                 <li><a class="dropdown-item" onclick="scrollToSection('america')">Europe</a></li>
                 <li><a class="dropdown-item"onclick="scrollToSection('africa')">Africa</a></li>
                 <li><a class="dropdown-item" onclick="scrollToSection('south-america')">South-America</a></li>
-                <li><a class="dropdown-item" onclick="scrollToSection('oceania')">Oceania</a></li>
+                <li><a class="dropdown-item" onclick="scrollToSection('oceania')">Oceania</a>
             </ul>   
         </li>
+        <a onclick="showCart()"><i class="fas fa-shopping-cart"></i></a>
     </div>  
-    
+  
      
     <div id="cloudDiv">
 </br></br></br></br>
@@ -288,10 +289,11 @@
 </br></br></br>
 
 <center>
-    <h1><b>Jetzt Flüge Buchen!</b></h1>
+    <h1 class="excited-text"><b>▼ Jetzt Flüge Buchen ▼</b></h1>
 </br></br></br>
 </br></br></br>
 </br></br></br>
+
 </br></br></br>
 
  
@@ -304,7 +306,7 @@
 <center>
 <div class="container">
     <div class="destination-carousel" id="america">
-        <h2>North American Destinations</h2>
+        <h1>North American Destinations</h1>
         <div id="america-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <!-- Slide 1 -->
@@ -320,7 +322,7 @@
                                         <h1>UNITED STATES OF AMERICA!</h1>
                                         <h2>The land of the freeee</br></h2>
                                         <p>New York City is the city that never sleeps. Explore iconic landmarks such as Times Square, Central Park, and the Statue of Liberty.Its the CApital of the woorld</br></br></p>
-                                        <label><input type="checkbox" class="destination-checkbox" data-item="New York City, USA"> ADD TO SHOPPING CART</label>
+                                        <label><input type="checkbox" class="destination-checkbox" data-item="New York City, USA : 500,00€"> ADD TO SHOPPING CART</label>
                                     </div>
                                 </td>
                            
@@ -340,7 +342,7 @@
                                         <h1>CANADA!</h1>
                                         <h2>The land of the freezing</br></h2>
                                         <p>Discover the breathtaking beauty of Banff National Park in Canada. Marvel at stunning mountain scenery, crystal-clear lakes, and abundant wildlife. Dont fight the bears and be nice!</p>
-                                        <label><input type="checkbox" class="destination-checkbox" data-item="Banff National Park, Canada"> ADD TO SHOPPING CART!</label>
+                                        <label><input type="checkbox" class="destination-checkbox" data-item="Banff National Park, Canada : 490,00€"> ADD TO SHOPPING CART!</label>
                                     </div>
                                 </td>
                             </tr>
@@ -360,7 +362,7 @@
                                         <h1>MEXICO!!!</h1>
                                         <h2>its very hot here</br></h2>
                                         <p>Mexico CITY bla bla is so when I the when the I do the thing that I do is in the new thingy lllllllllllll ok when ok okokokokok</br></br></p>
-                                        <label><input type="checkbox" class="destination-checkbox" data-item="New York City, USA"> ADD TO SHOPPING CART</label>
+                                        <label><input type="checkbox" class="destination-checkbox" data-item="Mexico : 9000,00€"> ADD TO SHOPPING CART</label>
                                     </div>
                                 </td>
                             </tr>
@@ -414,7 +416,7 @@
 <center>
 <div class="container">
 <div class="destination-carousel" id="asia">
-<h2>Asia Destinations</h2>
+<h1>Asia Destinations</h1>
 <div id="Asia-carousel" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
     <!-- Slide 1 -->
@@ -430,7 +432,7 @@
                             <h1>Japan, Tokyo</h1>
                             <h2>The land of the rising sun</br></h2>
                             <p>New York City is the city that never sleeps. Explore iconic landmarks such as Times Square, Central Park, and the Statue of Liberty.Its the CApital of the woorld</br></br></p>
-                            <label><input type="checkbox" class="destination-checkbox" data-item="New York City, USA"> ADD TO SHOPPING CART</label>
+                            <label><input type="checkbox" class="destination-checkbox" data-item="Japan, Tokyo : 900,00€"> ADD TO SHOPPING CART</label>
                         </div>
                     </td>
                
@@ -443,14 +445,14 @@
             <table class="">
                 <tr>
                     <td>
-                        <img class="setimagebig" src="bilder/CAN.jpg" alt="Banff National Park, Canada">
+                        <img class="setimagebig" src="bilder/QATAR.jpg" alt="Banff National Park, Canada">
                     </td>
                     <td>
                         <div class="carousel-description">
                             <h1>Qatar</h1>
                             <h2>The land of the rich</br></h2>
                             <p>Discover the breathtaking beauty of Banff National Park in Canada. Marvel at stunning mountain scenery, crystal-clear lakes, and abundant wildlife. Dont fight the bears and be nice!</p>
-                            <label><input type="checkbox" class="destination-checkbox" data-item="Banff National Park, Canada"> ADD TO SHOPPING CART!</label>
+                            <label><input type="checkbox" class="destination-checkbox" data-item="Qatar, free 00,00€"> ADD TO SHOPPING CART!</label>
                         </div>
                     </td>
                 </tr>
@@ -463,14 +465,14 @@
             <table class="">
                 <tr>
                     <td>
-                        <img class="setimagebig" src="bilder/MXK.jpg" alt="Mexico">
+                        <img class="setimagebig" src="bilder/shanghai.jpg" alt="Mexico">
                     </td>
                     <td>
                         <div class="carousel-description">
                             <h1>China, Shanghai!</h1>
                             <h2>its very cool here</br></h2>
                             <p>Mexico CITY bla bla is so when I the when the I do the thing that I do is in the new thingy lllllllllllll ok when ok okokokokok</br></br></p>
-                            <label><input type="checkbox" class="destination-checkbox" data-item="New York City, USA"> ADD TO SHOPPING CART</label>
+                            <label><input type="checkbox" class="destination-checkbox" data-item="China, Shanghai : 595,59€"> ADD TO SHOPPING CART</label>
                         </div>
                     </td>
                 </tr>
@@ -521,7 +523,7 @@
 
 <div class="container">
     <div class="destination-carousel" id="europe">
-        <h2>Europa</h2>
+        <h1>Europa</h1>
         <div id="europe-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <!-- Slide 1 -->
@@ -530,14 +532,14 @@
                         <table class="flexthing">
                             <tr>
                                 <td>
-                                    <img class="setimagebig" src="bilder/NYC.jpg" alt="New York City, USA">
+                                    <img class="setimagebig" src="bilder/ROm.jpg" alt="New York City, USA">
                                 </td>
                                 <td>
                                     <div class="carousel-description">
-                                        <h1>UNITED STATES OF AMERICA!</h1>
-                                        <h2>The land of the freeee</br></h2>
-                                        <p>New York City is the city that never sleeps. Explore iconic landmarks such as Times Square, Central Park, and the Statue of Liberty.Its the CApital of the woorld</br></br></p>
-                                        <label><input type="checkbox" class="destination-checkbox" data-item="New York City, USA"> ADD TO SHOPPING CART</label>
+                                        <h1>Italia, Rome</h1>
+                                        <h2>The land of the Pizza</br></h2>
+                                        <p>Pizza is made in Italia we make the good pizza the best pizza the best ice the best food come here and enjoy</br></br></p>
+                                        <label><input type="checkbox" class="destination-checkbox" data-item="Italia, Rome : 33,33€"> ADD TO SHOPPING CART</label>
                                     </div>
                                 </td>
                            
@@ -550,14 +552,14 @@
                         <table class="">
                             <tr>
                                 <td>
-                                    <img class="setimagebig" src="bilder/CAN.jpg" alt="Banff National Park, Canada">
+                                    <img class="setimagebig" src="bilder/FRANK.jpg" alt="Banff National Park, Canada">
                                 </td>
                                 <td>
                                     <div class="carousel-description">
-                                        <h1>CANADA!</h1>
-                                        <h2>The land of the freezing</br></h2>
-                                        <p>Discover the breathtaking beauty of Banff National Park in Canada. Marvel at stunning mountain scenery, crystal-clear lakes, and abundant wildlife. Dont fight the bears and be nice!</p>
-                                        <label><input type="checkbox" class="destination-checkbox" data-item="Banff National Park, Canada"> ADD TO SHOPPING CART!</label>
+                                        <h1>Germany</h1>
+                                        <h2>Frankfurt</br></h2>
+                                        <p>Come here and meet diverse people of the world and enjoy the luxus and the tall buildings and stuff and and adn</p>
+                                        <label><input type="checkbox" class="destination-checkbox" data-item="Frankfurt : 2,50€"> ADD TO SHOPPING CART!</label>
                                     </div>
                                 </td>
                             </tr>
@@ -570,14 +572,14 @@
                         <table class="">
                             <tr>
                                 <td>
-                                    <img class="setimagebig" src="bilder/MXK.jpg" alt="Mexico">
+                                    <img class="setimagebig" src="bilder/BARCA.jpg" alt="Mexico">
                                 </td>
                                 <td>
                                     <div class="carousel-description">
-                                        <h1>MEXICO!!!</h1>
-                                        <h2>its very hot here</br></h2>
-                                        <p>Mexico CITY bla bla is so when I the when the I do the thing that I do is in the new thingy lllllllllllll ok when ok okokokokok</br></br></p>
-                                        <label><input type="checkbox" class="destination-checkbox" data-item="New York City, USA"> ADD TO SHOPPING CART</label>
+                                        <h1>Spanaien, Barca</h1>
+                                        <h2>Place of the football</br></h2>
+                                        <p>Lionel Messi played for FC. Barcelona and here you can go to the beach and swim and get eaten by a shark and die. joke!</br></br></p>
+                                        <label><input type="checkbox" class="destination-checkbox" data-item="Spanien, Barca : 50€"> ADD TO SHOPPING CART</label>
                                     </div>
                                 </td>
                             </tr>
@@ -632,7 +634,7 @@
 <center>
 <div class="container">
 <div class="destination-carousel" id="africa">
-<h2>Africa Destinations</h2>
+<h1>Africa Destinations</h1>
 <div id="africa-carousel" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
     <!-- Slide 1 -->
@@ -641,7 +643,7 @@
             <table class="flexthing">
                 <tr>
                     <td>
-                        <img class="setimagebig" src="bilder/NYC.jpg" alt="New York City, USA">
+                        <img class="setimagebig" src="bilder/MOR.jpg" alt="New York City, USA">
                     </td>
                     <td>
                         <div class="carousel-description">
@@ -661,7 +663,7 @@
             <table class="">
                 <tr>
                     <td>
-                        <img class="setimagebig" src="bilder/CAN.jpg" alt="Banff National Park, Canada">
+                        <img class="setimagebig" src="bilder/egypt.jpg" alt="Banff National Park, Canada">
                     </td>
                     <td>
                         <div class="carousel-description">
@@ -681,7 +683,7 @@
             <table class="">
                 <tr>
                     <td>
-                        <img class="setimagebig" src="bilder/MXK.jpg" alt="Mexico">
+                        <img class="setimagebig" src="bilder/SA.jpeg" alt="Mexico">
                     </td>
                     <td>
                         <div class="carousel-description">
@@ -740,7 +742,7 @@
 
 <div class="container">
     <div class="destination-carousel" id="south-america">
-        <h2>South American Destinations</h2>
+        <h1>South American Destinations</h1>
         <div id="south-america-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <!-- Slide 1 -->
@@ -749,7 +751,7 @@
                         <table class="flexthing">
                             <tr>
                                 <td>
-                                    <img class="setimagebig" src="bilder/NYC.jpg" alt="New York City, USA">
+                                    <img class="setimagebig" src="bilder/RIO.jpg" alt="New York City, USA">
                                 </td>
                                 <td>
                                     <div class="carousel-description">
@@ -769,7 +771,7 @@
                         <table class="">
                             <tr>
                                 <td>
-                                    <img class="setimagebig" src="bilder/CAN.jpg" alt="Banff National Park, Canada">
+                                    <img class="setimagebig" src="bilder/ARG.jpg" alt="Banff National Park, Canada">
                                 </td>
                                 <td>
                                     <div class="carousel-description">
@@ -789,7 +791,7 @@
                         <table class="">
                             <tr>
                                 <td>
-                                    <img class="setimagebig" src="bilder/MXK.jpg" alt="Mexico">
+                                    <img class="setimagebig" src="bilder/vene.jpg" alt="Mexico">
                                 </td>
                                 <td>
                                     <div class="carousel-description">
@@ -852,7 +854,7 @@
 <center>
 <div class="container">
 <div class="destination-carousel" id="oceania">
-<h2>Oceania Destinations</h2>
+<h1>Oceania Destinations</h1>
 <div id="oceania-carousel" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
     <!-- Slide 1 -->
@@ -861,14 +863,14 @@
             <table class="flexthing">
                 <tr>
                     <td>
-                        <img class="setimagebig" src="bilder/NYC.jpg" alt="New York City, USA">
+                        <img class="setimagebig" src="bilder/AUS.jpg" alt="New York City, USA">
                     </td>
                     <td>
                         <div class="carousel-description">
                             <h1>Sydney, Australia</h1>
                             <h2>Spiders, Snakes and Spiders</br></h2>
                             <p> home to the Sydney Harbour Bridge, which is one of the most recognizable landmarks in the world. Completed in 1932, it's the tallest steel arch bridge, standing at 134 meters (440 feet) above the harbor.</br></br></p>
-                            <label><input type="checkbox" class="destination-checkbox" data-item="New York City, USA"> ADD TO SHOPPING CART</label>
+                            <label><input type="checkbox" class="destination-checkbox" data-item="Australia 900,00€"> ADD TO SHOPPING CART</label>
                         </div>
                     </td>
                
@@ -881,7 +883,7 @@
             <table class="">
                 <tr>
                     <td>
-                        <img class="setimagebig" src="bilder/CAN.jpg" alt="Banff National Park, Canada">
+                        <img class="setimagebig" src="bilder/new.jpg" alt="Banff National Park, Canada">
                     </td>
                     <td>
                         <div class="carousel-description">
@@ -901,14 +903,14 @@
             <table class="">
                 <tr>
                     <td>
-                        <img class="setimagebig" src="bilder/MXK.jpg" alt="Mexico">
+                        <img class="setimagebig" src="bilder/bikini.png" alt="Mexico">
                     </td>
                     <td>
                         <div class="carousel-description">
                             <h1>Bikini Bottom</h1>
                             <h2>Spongebob City</br></h2>
                             <p>Embark on an adventure to the vibrant underwater city of Bikini Bottom, where SpongeBob and friends await to make your vacation unforgettable</br></br></p>
-                            <label><input type="checkbox" class="destination-checkbox" data-item="Shanghai, China : 137.000.900,99€"> ADD TO SHOPPING CART</label>
+                            <label><input type="checkbox" class="destination-checkbox" data-item="Shanghai, China : 137.900,99€"> ADD TO SHOPPING CART</label>
                         </div>
                     </td>
                 </tr>
@@ -927,7 +929,8 @@
 
     <div id="cart">
         <h2>Shopping Cart</h2>
-        <ul id="cart-items">
+    </br>
+        <ul id="cart-items" class="sachentext1">
           <!-- NICHTS darf hier rein (Automatic) -->
         </ul>
       </div>
@@ -936,9 +939,12 @@
       <div id="overlay">
         <div id="popup">
           <h2>Shopping Cart</h2>
-          <ul id="popup-cart-items">
+        </br>
+          <ul id="popup-cart-items" class="sachentext1">
             <!-- Selected items will be dynamically added here -->
           </ul>
+        </br>
+    </br>
           <button onclick="hidePopup()">Close</button>
         </div>
       </div>
@@ -947,16 +953,21 @@
 
 
       <div id="customPopup" class="popup-container">
-        <h1>Contact info</h1>
-        <p>E-mail: airilias@gmail.cool</br>
-            Telefon: 01785539872</br>
+        <h1><b>Contact info</b></h1>
+    </br>
+</br>
+        <h2>E-mail: airilias@gmail.cool</br></br>
+            Telefon: 01785539872</br></br>
             HQ: Jawatsraße. 11
 
 
 
 
 
-        </p>
+        </h2>
+    </br>
+</br>
+</br></br>
         <button onclick="closePopup()">Close</button>
     </div>
 
@@ -999,6 +1010,17 @@
 </br></br></br></br>
 
 
+
+
+<div class="container">
+    <div class="image-container">
+        <img class="footerbeach" src="bilder/beach.gif" alt="">
+        <div class="footer">
+            <p><b>AIR ILIAS ©</p>
+          </div>
+    </div>
+  </div>
+  
 
   
 
