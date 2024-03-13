@@ -1,1 +1,3 @@
-nö
+als vorlage wurde eine Alte aufgabe benutzt von WEB Unterricht dennoch wurden davon nur bootstrap und java compomente behalten sonst ist alles andere auf der seite von scratch.
+alle bilder wurden von Vertraueten Quellen oder von mir direkt erstellt
+alles wurde alleine von Ilias Bennaji gemacht
